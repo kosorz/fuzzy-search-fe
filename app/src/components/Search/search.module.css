@@ -1,0 +1,80 @@
+.root {
+  align-self: start;
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    align-self: center;
+    width: calc(100% - 32px);
+  }
+}
+
+.search {
+  border-radius: 23px;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  box-shadow: rgba(60, 64, 67, 0.25) 0px 2px 8px 0px;
+  flex-direction: column;
+}
+
+.searchWithSuggestions {
+  padding-bottom: 48px;
+}
+
+.inputFrame {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 8px;
+  padding-right: 20px;
+}
+
+.inputFrameWithSuggestions {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: calc(100% - 16px);
+  border: none;
+  height: 46px;
+  align-self: center;
+  line-height: 22px;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.suggestion {
+  line-height: 22px;
+  font-size: 16px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+.suggestionHover:hover {
+  background: lightgray;
+}
+
+.suggestionVisited {
+  color: #9745ec;
+}
+
+.arrowSuggestion {
+  background: lightgray;
+}
+
+.error {
+  margin-top: 8px;
+  color: red;
+}

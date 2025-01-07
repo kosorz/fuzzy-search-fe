@@ -1,0 +1,21 @@
+.results {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result {
+  max-width: 350px;
+}
+
+.title {
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4f66bd;
+}
+
+.visited {
+  color: #9745ec;
+}

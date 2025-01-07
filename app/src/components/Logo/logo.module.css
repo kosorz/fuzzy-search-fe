@@ -1,0 +1,11 @@
+.root {
+  align-self: flex-end;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    margin-top: 16px;
+    align-self: center;
+  }
+}
