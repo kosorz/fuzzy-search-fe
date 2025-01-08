@@ -1,3 +1,4 @@
+"use server";
 import { Film, FilmResult, FilmSuggestion } from "@/app/src/types/filmResult";
 
 export async function fetchFilms(
